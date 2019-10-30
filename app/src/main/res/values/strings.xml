@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BookCase</string>
+
+    <string-array name="bookList">
+        <item>Harry Potter</item>
+        <item>Binging With Babish</item>
+        <item>Percy Jackson</item>
+        <item>Kama Sutra</item>
+        <item>50 Shades of Grey</item>
+        <item>Bible</item>
+        <item>Bible 2</item>
+        <item>Green Eggs and Ham</item>
+        <item>How to Read</item>
+        <item>Bible 3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
