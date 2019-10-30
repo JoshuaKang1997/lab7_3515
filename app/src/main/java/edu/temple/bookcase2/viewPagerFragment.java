@@ -28,7 +28,7 @@ public class viewPagerFragment extends Fragment {
         return view;
     }
     private PagerAdapter buildAdapter() {
-        return(new viewPagerAdapter(getActivity(), getChildFragmentManager()));
+        return(new viewPagerAdapter(getActivity(), getChildFragmentManager(),getResources().getStringArray(R.array.bookList)));
     }
 }
 

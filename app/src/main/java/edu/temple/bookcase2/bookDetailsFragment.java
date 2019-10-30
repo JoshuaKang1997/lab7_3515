@@ -35,5 +35,4 @@ public class bookDetailsFragment extends Fragment {
     public void updateTextView(String book) {
         textView.setText(book);
     }
-
 }

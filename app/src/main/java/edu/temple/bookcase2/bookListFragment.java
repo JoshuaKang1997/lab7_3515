@@ -49,11 +49,9 @@ public class bookListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String book = booklist[position];
-                Toast.makeText(getActivity(), book, Toast.LENGTH_SHORT).show();
                 listener.onInputListSent(book);
             }
         });
-
         return view;
     }
 

@@ -4,13 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#003248A2"
+    android:layout_gravity="center"
     tools:context=".bookDetailsFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/textViewID"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="2nd fragment" />
+        android:layout_width="237dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:text="Choose a Book!"
+        android:textSize="30dp" />
 
 </FrameLayout>

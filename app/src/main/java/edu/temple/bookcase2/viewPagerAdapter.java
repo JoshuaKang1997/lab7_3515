@@ -9,10 +9,12 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class viewPagerAdapter extends FragmentPagerAdapter {
     Context context = null;
+    String arr[];
 
-    public viewPagerAdapter(Context ctxt, FragmentManager mgr) {
+    public viewPagerAdapter(Context ctxt, FragmentManager mgr, String[] arr) {
         super(mgr, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         this.context = ctxt;
+        this.arr = arr;
     }
 
     @Override
@@ -26,16 +28,6 @@ public class viewPagerAdapter extends FragmentPagerAdapter {
     }
 
     public String getPageTitle(int position) {
-        String[] array = {"Harry Potter",
-                "Binging With Babish",
-                "Percy Jackson",
-                "Kama Sutra",
-                "50 Shades of Grey",
-                "Bible",
-                "Bible 2",
-                "Green Eggs and Ham",
-                "How to Read",
-                "Bible 3"};
-        return (EditorFragment.getTitle(array, position));
+        return (EditorFragment.getTitle(arr, position));
     }
 }

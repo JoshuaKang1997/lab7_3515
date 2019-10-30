@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00CE6161"
+    android:backgroundTint="#00DF7070"
+    android:gravity="center"
     tools:context=".viewPagerFragment">
 
 
@@ -10,4 +13,5 @@
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </FrameLayout>

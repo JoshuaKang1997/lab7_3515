@@ -8,8 +8,11 @@
 
     <FrameLayout
         android:id="@+id/booklist_fragment"
-        android:layout_width="397dp"
-        android:layout_height="575dp"
+        android:layout_width="371dp"
+        android:layout_height="366dp"
+        android:background="#00CE7373"
+        android:backgroundTint="#00D36C6C"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
