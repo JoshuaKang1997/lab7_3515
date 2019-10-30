@@ -25,7 +25,6 @@ public class viewPagerFragment extends Fragment {
         ViewPager pager=(ViewPager)view.findViewById(R.id.pager);
         pager.setAdapter(buildAdapter());
 
-
         return view;
     }
     private PagerAdapter buildAdapter() {

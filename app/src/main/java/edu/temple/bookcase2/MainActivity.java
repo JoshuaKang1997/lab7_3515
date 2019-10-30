@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity implements bookListFragment.
     boolean twoframes;
     private bookListFragment blf;
     private bookDetailsFragment bdf;
+    private viewPagerFragment vpa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements bookListFragment.
         twoframes = (findViewById(R.id.bookdetails_fragment) != null);
 
         blf = bookListFragment.newInstance();
+        vpa = viewPagerFragment.newInstance();
 
         if(twoframes) {
             bdf = bookDetailsFragment.newInstance();
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements bookListFragment.
            // Toast.makeText(this, "Not reached here", Toast.LENGTH_SHORT).show();
         } else {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.booklist_fragment, blf);
+            ft.replace(R.id.booklist_fragment, vpa);
             ft.commit();
         }
     }
