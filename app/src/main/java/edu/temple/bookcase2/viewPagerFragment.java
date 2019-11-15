@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 
 public class viewPagerFragment extends Fragment {
 
+    private int current;
+
     public static viewPagerFragment newInstance() {
         viewPagerFragment fragment = new viewPagerFragment();
         return fragment;
@@ -24,6 +26,21 @@ public class viewPagerFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_view_pager, container, false);
         ViewPager pager=(ViewPager)view.findViewById(R.id.pager);
         pager.setAdapter(buildAdapter());
+        pager.setCurrentItem(current,true);
+        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionoffsetPixels)
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
         return view;
     }
