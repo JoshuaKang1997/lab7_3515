@@ -29,7 +29,7 @@ public class bookDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_book_details, container, false);
-        textView = view.findViewById(R.id.textViewID);
+        textView = view.findViewById(R.id.date);
         return view;
     }
 
