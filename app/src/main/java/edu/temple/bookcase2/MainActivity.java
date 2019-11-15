@@ -1,15 +1,34 @@
 package edu.temple.bookcase2;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import java.io.InputStreamReader;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import java.net.URL;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.util.ArrayList;
+import java.io.IOException;
+import java.io.BufferedReader;
+
 
 public class MainActivity extends AppCompatActivity implements bookListFragment.listFragListener{
     boolean twoframes;
     private bookListFragment blf;
     private bookDetailsFragment bdf;
     private viewPagerFragment vpa;
+
+    private JSONArray JSONbook;
+    private String api = "https://kamorris.com/lab/audlib/booksearch.php";
+    private String apiSearch = "https://kamorris.com/lab/audlib/booksearch.php?search=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
