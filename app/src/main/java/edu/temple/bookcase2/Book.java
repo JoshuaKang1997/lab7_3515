@@ -11,7 +11,7 @@ public class Book {
     private int year;
     private String coverURL;
 
-    public  Book(int id, String title, String author, int year, String coverURL, Context context){
+    public Book(int id, String title, String author, int year, String coverURL, Context context){
         this.context = context;
         this.id = id;
         this.title = title;
@@ -19,5 +19,4 @@ public class Book {
         this.year = year;
         this.coverURL = coverURL;
     }
-
 }

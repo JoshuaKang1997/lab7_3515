@@ -9,16 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.io.Serializable;
+
 public class bookDetailsFragment extends Fragment {
   //  private detailFragListener listener;
     private TextView textView;
 
-    public static bookDetailsFragment newInstance() {
+    public static bookDetailsFragment newInstance(Book book) {
         bookDetailsFragment fragment = new bookDetailsFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
+        Bundle args = new Bundle();
+        args.putSerializable("book", (Serializable) book);
+        fragment.setArguments(args);
         return fragment;
     }
 
