@@ -29,7 +29,10 @@ public class viewPagerFragment extends Fragment {
         pager.setCurrentItem(current,true);
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionoffsetPixels)
+            public void onPageScrolled(int position, float positionOffset, int positionoffsetPixels) {
+
+            }
+
 
             @Override
             public void onPageSelected(int position) {
